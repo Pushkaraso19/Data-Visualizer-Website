@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataViz Pro - Home</title>
+    
+    <!-- Include the D3.js library -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    
+    <!-- Include jQuery for smooth scrolling and navbar script -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./transition.js"></script>
+
+    <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <!-- Add favicon -->
+    <link rel="icon" href="./Images/logo.png" type="image/x-icon">
+
+    <!-- GoogleFonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+</head>
+<body class="marcellus-regular">
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="/" class="logo">
+                    <img src="./Images/logo.png" alt="DataViz Pro Logo" >
+                    <span class="brandname">DataViz Pro</span>
+                </a>
+                
+                <ul class="container">
+                    <li><a href="./index.html" class="smooth-scroll nav-link"><i class="fas fa-home"></i>Home</a></li>
+                    <li><a href="./dashboard.html" class="smooth-scroll nav-link"><i class="fas fa-chart-line"></i>Dashboard</a></li>
+                    <li><a href="./about.html" class="smooth-scroll nav-link"><i class="fas fa-info-circle"></i>About</a></li>
+                    <li><a href="./contact.html" class="smooth-scroll nav-link"><i class="fas fa-envelope"></i>Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="container home-main-content">
+        <section id="home" class="home-section">
+            <div class="text-content">
+                <h1>Transform Your Data.<br />Visualize Your Success.</h1>
+                <p>At DataViz Pro, we specialize in transforming raw data into insightful visualizations. Our expertise in creating graphs and charts from various data sources makes us the go-to choice. Let us simplify your data visualization needs.</p>
+                <h2>Ready to visualize your data?</h2>
+                <a class="btn btn-success" href="./dashboard.html">Get Started</a>
+            </div>
+            <div class="image-content">
+                <img src="./Images/Data Visualization.png" alt="Data Visualization Image" draggable="false">
+            </div>
+        </section>    
+
+        <section id="features" class="features-cta-section">
+            <!-- Features Overview -->
+            <div class="features">
+              <h2>Key Features of DataViz Pro</h2>
+              <ul>
+                <li><i class="fas fa-upload"></i>Easy file upload for CSV and JSON formats</li>
+                <li><i class="fas fa-filter"></i>Diverse chart options: bar, line, pie, and scatter plots</li>
+                <li><i class="fas fa-user"></i>User-friendly interface with responsive design</li>
+                <li><i class="fas fa-database"></i>Advanced data processing and visualization capabilities using D3.js</li>
+              </ul>
+            </div>
+          
+            <div class="cta-detailed">
+              <h2>Not Sure Where to Start? Let Us Help!
+            </h2>
+              <p>Start exploring our features and make data work for you.</p>
+              <a href="./contact.html" class="btn btn-success">Contact Us</a>
+            </div>
+          </div>
+        </section>  
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./dashboard.html">Dashboard</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p>&copy; 2024 DataViz Pro. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="./script.js"></script>
+</body>
+</html>

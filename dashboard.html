@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DataViz Pro - Advanced Data Visualization Tool</title>
+        
+        <!-- Include the D3.js library -->
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="./transition.js"></script>
+        <!-- Include Font Awesome for icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        
+        <!-- Link to the CSS file -->
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+        
+        <!-- Add favicon -->
+        <link rel="icon" href="./Images/logo.png" type="image/x-icon">
+    </head>
+    <body class="marcellus-regular">
+        <header>
+            <nav class="navbar">
+                <div class="container">
+                    <a href="/" class="logo">
+                        <img src="./Images/logo.png" alt="DataViz Pro Logo">
+                        <span class="brandname">DataViz Pro</span>
+                    </a>
+                    <ul class="container">
+                        <li><a href="./index.html" class="smooth-scroll nav-link"><i class="fas fa-home"></i>Home</a></li>
+                        <li><a href="./dashboard.html" class="smooth-scroll nav-link"><i class="fas fa-chart-line"></i>Dashboard</a></li>
+                        <li><a href="./about.html" class="smooth-scroll nav-link"><i class="fas fa-info-circle"></i>About</a></li>
+                        <li><a href="./contact.html" class="smooth-scroll nav-link"><i class="fas fa-envelope"></i>Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <div class="container dashboard-main-content">
+            <aside class="sidebar">
+                <h2>Data Management</h2>
+                <form id="uploadForm" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="fileInput">Choose File:</label>
+                        <input type="file" id="fileInput" accept=".csv, .json">
+                    </div>
+                    <button type="button" class="btn btn-success" onclick="uploadFile()">
+                        <i class="fas fa-upload"></i> Upload File
+                    </button>    
+                    <div class="form-group">
+                        <label for="chartType">Chart Type:</label>
+                        <select id="chartType">
+                            <option value="bar">Bar Chart</option>
+                            <option value="line">Line Chart</option>
+                            <option value="pie">Pie Chart</option>
+                            <option value="scatter">Scatter Plot</option>
+                        </select>
+                    </div>
+                                
+                    <button type="button" class="btn btn-success" onclick="generateChart()">
+                        <i class="fas fa-chart-bar"></i> Generate Chart
+                    </button>
+                </form>
+            </aside>
+
+            <main>
+                <div id="chart" class="chart-container">
+                    <h2>Data Visualization</h2>
+                    <div id="chartArea"></div>
+                </div>
+                <div id="dataTable" class="data-table">
+                    <h2>Data Preview</h2>
+                    <table id="previewTable"></table>
+                </div>
+            </main>        
+        </div>
+
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3>Quick Links</h3>
+                        <ul class="footer-links">
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./dashboard.html">Dashboard</a></li>
+                            <li><a href="./about.html">About</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <p>&copy; 2024 DataViz Pro. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <!-- Custom JavaScript -->
+        <script src="./script.js"></script>
+    </body>
+</html>
